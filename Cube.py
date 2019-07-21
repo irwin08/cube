@@ -31,8 +31,25 @@ class Cube:
 
         
     def move(self, move):
-        if move == "R":
-            this.moveTopTwist()
+        for i in range(len(move)):
+            reverse = False
+            if i < len(move)-1:
+                if move[i+1] == "'":
+                    reverse = True
+
+            # TODO: pass reverse parameter
+            if move[i] == 'R':
+                self.moveRightTwist()
+            if move[i] == 'U':
+                self.moveUpperTwist()
+            if move[i] == 'F':
+                self.moveFrontTwist()
+            if move[i] == 'L':
+                self.moveLeftTwist()
+            if move[i] == 'B':
+                self.moveBackTwist()
+            if move[i] == 'D':
+                self.moveDownTwist()
 
         
     def moveLeftTwist(self):

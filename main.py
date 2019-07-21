@@ -20,6 +20,8 @@ def draw_face(screen, cube, faceNum, x, y):
             draw_bordered_rect(screen, x+(50*(i-6)),y + 50*2, 50, 50, cube.faces[faceNum][i])
             
 
+
+            
     
 pygame.init()
 
@@ -30,7 +32,7 @@ pygame.display.set_caption("Rubik's Cube")
 
 cube = Cube.Cube()
 
-cube.moveBackTwist()
+cube.move("RU")
 
 done = False
 
