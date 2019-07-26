@@ -32,7 +32,7 @@ pygame.display.set_caption("Rubik's Cube")
 
 cube = Cube.Cube()
 
-cube.move("RU")
+cube.move("TU")
 
 done = False
 
